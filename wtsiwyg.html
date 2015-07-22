@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Clicker</title>
+    <link rel="stylesheet" type="text/css" href="wysiwyg.css">
+    <style type="text/css">
+    </style>
+</head>
+<body>
+
+    <div id="div-result" >
+        <div id="div-display">
+            <button id="my-button">
+                <btntxt></btntxt>
+                <div id="drag-anchor"></div>
+            </button>
+        </div>
+        <div id="div-save">
+            <button id="save-css">Save</button>
+        </div>
+        <div id="div-css">
+            <strong>CSS</strong><br/>            
+            <code id ="css-code"></code>
+        </div>
+    </div>
+    <div id="div-input" >
+        <fieldset>
+            <legend>Size</legend>
+            <label for="btn-width">Width</label>
+            <input type="number" min="0" max="500" id="btn-width" />
+            <label for="btn-height">Height</label>
+            <input type="number" min="0" max="500" id="btn-height" />
+        </fieldset>
+        <fieldset>
+            <legend>Text</legend>
+            <label for="btn-txt"></label>
+            <input type="text" id="btn-txt" />
+            <label for="btn-txt-clr">Color</label>
+            <input type="color" id="btn-txt-clr" />
+        </fieldset>
+        <fieldset>
+            <legend>Font</legend>
+            <label for="btn-fnt-fmly">Family</label>
+            <select id="btn-fnt-fmly">
+                <option value="Arial">Arial</option>
+                <option value="Times">Times</option>
+                <option value="Courier">Courier</option>
+            </select>
+            <label for="btn-fnt-size">Size</label>
+            <input type="number" min="0" id="btn-fnt-size" />
+            <label for="btn-fnt-wt">Font-Weight</label>
+            <select id="btn-fnt-wt">
+                <option value="bold">bold</option>
+                <option value="normal">normal</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Background Gradient</legend>
+            <label for="btn-bck-top-clr">Top</label>
+            <input type="color" id="btn-bck-top-clr" />
+            <label for="btn-bck-btm-clr">Bottom</label>
+            <input type="color" id="btn-bck-btm-clr" />
+        </fieldset>
+        <fieldset>
+            <legend>Padding</legend>
+            <label for="btn-padding-top">Top</label>
+            <input type="number" min="0" max="100" id="btn-padding-top" class="btn-padding" />
+            <label for="btn-padding-right">Right</label>
+            <input type="number" min="0" max="100" id="btn-padding-right" class="btn-padding" />
+            <label for="btn-padding-bottom">Bottom</label>
+            <input type="number" min="0" max="100" id="btn-padding-bottom" class="btn-padding" />
+            <label for="btn-padding-left">Left</label>
+            <input type="number" min="0" max="100" id="btn-padding-left" class="btn-padding" />
+        </fieldset>
+        <fieldset>
+            <legend>Border</legend>
+            <label for="btn-border">Width</label>
+            <input type="number" min="0" max="10" id="btn-border" />
+            <label for="btn-border-top">Top</label>
+            <input type="color" id="btn-border-top" class="btn-border-clr" />
+            <label for="btn-border-right">Right</label>
+            <input type="color" id="btn-border-right" class="btn-border-clr" />
+            <label for="btn-border-bottom">Bottom</label>
+            <input type="color" id="btn-border-bottom" class="btn-border-clr" />
+            <label for="btn-border-left">Left</label>
+            <input type="color" id="btn-border-left" class="btn-border-clr" />
+            <label for="btn-border-radius">Radius</label>
+            <input type="number" min="0" max="500" id="btn-border-radius" />
+        </fieldset>
+        <fieldset>
+            <legend>Hover</legend>
+            <label for="btn-hover-color">Background</label>
+            <input type="color" id="btn-hover-color" />
+            <label for="btn-hover-txt-color">Color</label>
+            <input type="color" id="btn-hover-txt-color" />
+        </fieldset>
+        <fieldset>
+            <legend>Active</legend>
+            <label for="btn-active-color">Background</label>
+            <input type="color" id="btn-active-color" />
+            <label for="btn-active-txt-color">Color</label>
+            <input type="color" id="btn-active-txt-color" />
+        </fieldset>                
+    </div>
+    <div id="div-history">
+        <h3>History</h3>
+    </div>
+    <div>
+        <a href="#openModal" id="modal">modal</a>
+        <div id="openModal" class="modalDialog">
+            <div>
+                <a href="#close" title="Close" class="close">X</a>
+                <h3>CSS</h3>
+                <code id="dialogCssCode"></code>
+
+            </div>
+        </div>
+    </div>
+    <!--script files-->
+    <script type="text/javascript" src="wysiwyg.js"></script>
+</body>
+</html>
