@@ -72,6 +72,8 @@ fieldset {
 
 #div-save {
 	display: inline-block;
+	vertical-align: top;
+	padding-top:20px;
 }
 
 #save-css {
