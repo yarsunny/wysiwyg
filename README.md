@@ -3,7 +3,7 @@ WYSIWYG (What you see is what you get) is an web based editor to generate button
 <br/>
 <strong>How to run:</strong><br/>
  Note:<br/>
-  As i used cookie to store the saved buttons, Please run it in localhost rather than opening it as a file<br/>
+  Cookie is used to store the saved buttons, Please run it in localhost rather than opening it as a file<br/>
   *cookies wont work if opened as a file ex: "file:///C:/" in many browsers<br/>
   *HTML5 - run it in supported browsers<br/>
   1.On changing  CSS parameters (middle panel) display button (left panel) and css code (right panel) gets updated dynamically.<br/>
